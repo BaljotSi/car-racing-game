@@ -14,12 +14,14 @@
         <div class="rt">
             <div id="userCar" class="car">
                 <img height="100%" src="code_car1-removebg-preview.png" alt="">
+                <span>You</span>
             </div>
         </div>
         <button class="move" onclick="moveUser()">Move</button>
         <div class="rt">
-            <div class="car">
+            <div id="compCar" class="car">
                 <img height="70%" src="code_car2_-removebg-preview.png" alt="">
+                <span>Computer</span>
             </div>
         </div>
     </div>
@@ -29,10 +31,23 @@
     <script>
 
         let userCar = 0;
+        let compCar = 0;
         function moveUser() {
             console.log(userCar)
-            userCar = userCar + 10;
-            document.getElementById("userCar").style.marginLeft = userCar + "px";
+            let userSpeed = Math.random() * 3;
+            userCar = userCar + userSpeed;
+            document.getElementById("userCar").style.marginLeft = userCar + "vw";
+
+            if (userCar > 95) {
+                document.write("You win")
+            }
+            let speed = Math.random() * 3;
+            compCar = compCar + speed
+            document.getElementById("compCar").style.marginLeft = compCar + "vw";
+
+            if (compCar > 95) {
+                document.write("You lost")
+            }
         }
     </script>
 </body>

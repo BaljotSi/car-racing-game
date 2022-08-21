@@ -34,3 +34,9 @@ body {
     height: 15vh;
     font-size: 60px;
 }
+
+span {
+    background-color: gray;
+    border: solid black 3px;
+    border-radius: 5px;
+}
