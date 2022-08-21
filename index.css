@@ -1,0 +1,36 @@
+body {
+    background-color: greenyellow;
+}
+
+.bigbox {
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.rt {
+    border-style: solid;
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.car {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.move {
+    background-color: aqua;
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 10px;
+    width: 20vw;
+    height: 15vh;
+    font-size: 60px;
+}

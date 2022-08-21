@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="rt">
+            <div id="userCar" class="car">
+                <img height="100%" src="code_car1-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <button class="move" onclick="moveUser()">Move</button>
+        <div class="rt">
+            <div class="car">
+                <img height="70%" src="code_car2_-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        let userCar = 0;
+        function moveUser() {
+            console.log(userCar)
+            userCar = userCar + 10;
+            document.getElementById("userCar").style.marginLeft = userCar + "px";
+        }
+    </script>
+</body>
+
+</html>
