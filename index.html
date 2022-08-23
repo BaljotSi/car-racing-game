@@ -34,12 +34,12 @@
         let compCar = 0;
         function moveUser() {
             console.log(userCar)
-            let userSpeed = Math.random() * 3;
+            let userSpeed = Math.random() * 5;
             userCar = userCar + userSpeed;
             document.getElementById("userCar").style.marginLeft = userCar + "vw";
 
             if (userCar > 95) {
-                document.write("You win")
+                location.href = "win.html";
             }
             let speed = Math.random() * 3;
             compCar = compCar + speed
