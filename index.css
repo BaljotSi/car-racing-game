@@ -25,7 +25,7 @@ body {
     align-items: center;
 }
 
-.move {
+button {
     background-color: aqua;
     border-style: solid;
     border-color: aquamarine;
