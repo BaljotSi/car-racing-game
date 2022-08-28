@@ -41,12 +41,6 @@ span {
     border-radius: 5px;
 }
 
-
-.content {
-    display: flex;
-    justify-content: center;
-}
-
 .emoji {
     animation-name: pop;
     animation-duration: 2s;
